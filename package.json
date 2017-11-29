@@ -1,0 +1,49 @@
+{
+  "name": "unique.macro",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^21.2.0",
+    "babel-macros": "^1.2.0",
+    "babel-plugin-tester": "^4.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.5.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-react": "^5.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-prettier": "^2.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^21.2.1",
+    "prettier": "^1.7.4"
+  },
+  "dependencies": {
+    "babel-macros": "^1.2.0"
+  },
+  "scripts": {
+    "test": "jest --coverage --ci --runInBand",
+    "test:watch": "jest --watch",
+    "prepare": "babel src -d lib"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^unique.macro$": "<rootDir>/src/index.js"
+    }
+  }
+}
