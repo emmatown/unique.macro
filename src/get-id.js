@@ -29,7 +29,7 @@ const getFileId = state => {
     return file.get(FILE_HASH)
   }
   const filename = file.opts.filename
-  console.log(filename)
+
   // find module root directory
   let moduleRoot = ''
   let filePath = ''
