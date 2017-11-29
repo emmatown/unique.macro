@@ -29,18 +29,19 @@ const getFileId = state => {
     return file.get(FILE_HASH)
   }
   const filename = file.opts.filename
+  console.log(filename)
   // find module root directory
   let moduleRoot = ''
   let filePath = ''
   let moduleName = ''
-  if (moduleRoot) {
-    try {
-      moduleRoot = findModuleRoot(filename)
-      filePath =
-        moduleRoot && path.relative(moduleRoot, filename).replace(path.sep, '/')
-      moduleName = require(path.join(moduleRoot, 'package.json')).name
-    } catch (e) {}
-  }
+  try {
+    moduleRoot = findModuleRoot(filename)
+    filePath =
+      moduleRoot && path.relative(moduleRoot, filename).replace(path.sep, '/')
+
+    moduleName = require(path.join(moduleRoot, 'package.json')).name
+  } catch (e) {}
+
   const code = file.code
 
   const fileHash = moduleName + filePath + code

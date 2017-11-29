@@ -7,7 +7,7 @@ import unique from 'unique.macro'
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const uniqueClass = 'css-1sxkeby';
+const uniqueClass = 'css-1i4kx88';
 "
 `;
 
@@ -18,8 +18,23 @@ import unique from 'unique.macro'
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const uniqueSomething = 'something-1x9ypyq';
+const uniqueSomething = 'something-1ajrdri';
 "
+`;
+
+exports[`unique.macro basic 1`] = `
+"
+const uniqueClass = 'css-1xp6fv5';"
+`;
+
+exports[`unique.macro custom prefix 1`] = `
+"
+const uniqueSomething = 'something-13atynq';"
+`;
+
+exports[`unique.macro with commonjs 1`] = `
+"
+const uniqueClass = 'css-12y3co1';"
 `;
 
 exports[`with commonjs 1`] = `
@@ -29,6 +44,6 @@ const unique = require('unique.macro')
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-const uniqueClass = 'css-1bvwn10';
+const uniqueClass = 'css-n3g2au';
 "
 `;
